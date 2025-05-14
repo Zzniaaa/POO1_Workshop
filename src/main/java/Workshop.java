@@ -9,6 +9,15 @@ public class Workshop {
     public int sumarDosNumeros(int a, int b) {
         // TODO: Implementar el método para retornar la suma de dos números enteros.
         // Ejemplo: Si a = 3 y b = 5, el resultado debería ser 8.
+        Scanner leer = new Scanner(System.in);
+
+            System.out.print("Digita el primer número: ");
+            int a = leer.nextFloat();
+
+            System.out.print("Digita el segundo número: ");
+            int b = leer.nextFloat();
+
+            
         return a+b;
     }
 
@@ -16,6 +25,28 @@ public class Workshop {
     public int mayorDeTresNumeros(int a, int b, int c) {
         // TODO: Implementar el método para retornar el mayor de los tres números enteros.
         // Ejemplo: Si a = 3, b = 7, y c = 5, el resultado debería ser 7.
+        Scanner leer = new Scanner(System.in);
+
+            System.out.print("Digita el primer número: ");
+            int a = leer.nextInt();
+
+            System.out.print("Digita el segundo número: ");
+            int b = leer.nextInt();
+
+            System.out.print("Digita el tercer número: ");
+            int c = leer.nextInt();
+
+            int mayor;
+
+            if (a >= b && a >= c) {
+                mayor = a;
+            } else if (b >= a && b >= c) {
+                mayor = b;
+            } else {
+                mayor = c;
+            }
+
+            System.out.println("El número mayor es: " + mayor);
         return 0;
     }
 
@@ -23,6 +54,18 @@ public class Workshop {
     public int[] tablaMultiplicar(int numero, int limite) {
         // TODO: Implementar el método para retornar la tabla de multiplicar del número dado.
         // Ejemplo: Si numero = 2 y limite = 5, el resultado debería ser [2, 4, 6, 8, 10].
+        Scanner leer = new Scanner(System.in);
+
+            System.out.print("Digita un número: ");
+            int numero = leer.nextInt();
+
+            System.out.print("Digita el límite de multiplos: ");
+            int limite = leer.nextInt();
+
+            System.out.println("Los múltiplos de " + numero + " son:");
+            for (int i = 0; i <= limite; i++) {
+                int multiplo = numero * i;
+                System.out.println(numero + " x " + i + " = " + multiplo);
         return new int[0];
     }
 
